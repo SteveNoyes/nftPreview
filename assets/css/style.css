@@ -22,5 +22,138 @@ body {
   font-size: 18px;
   font-weight: 300;
   font-family: 'Outfit', sans-serif, monospace;
+  color: var(--white);
+  background-color: var(--main-bg-blue);
 }
 
+.displayFlex {
+  display: flex;
+}
+
+.cardWrapper {
+  width: 70%;
+  max-width: 350px;
+  margin: auto;
+  background-color: var(--card-bg-blue);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 15px;
+}
+
+.cardWrapper img {
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: var(--cyan);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: .7;
+}
+
+.text {
+  padding: 9.3rem;
+  border-radius: 10px;
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.cardWrapper h1 {
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.cardWrapper h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.details {
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  color: var(--soft-blue);
+}
+
+.divInADiv {
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.price p {
+  padding-left: 7px;
+  color: var(--cyan);
+}
+
+.timeLimit p {
+  padding-left: 7px;
+  color: var(--soft-blue);
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--line-blue);
+}
+
+.creator {
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.creator img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.creator p {
+  padding-left: 1rem;
+  color: var(--soft-blue);
+}
+
+.creator span {
+  color: var(--white);
+}
+
+.creator span:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.attribution {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+}

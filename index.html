@@ -8,26 +8,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <!-- Title -->
   <title>NFT Preview</title>
-  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <!-- Main Section -->
   <main>
+    <!-- Card Wrapper Section -->
     <div class="cardWrapper">
-      <img src="" alt="">
+      <div class="container">
+        <img src="assets/images/image-equilibrium.jpg" alt="a fancy looking cube" width="100%" class="image">
+        <div class="middle">
+          <div class="text"><img src="assets/images/icon-view.svg" alt=""></div>
+        </div>
+      </div>
       <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <img src="" alt="">
-      <p>0.041 ETH</p>
-      <img src="" alt="">
-      <p>3 days left</p>
-      <hr>
-      <img src="" alt="">
-      <p>Creation of Jules Wyvern</p>
-    </div>
-  </main>
+      <p class="details">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="divInADiv displayFlex">
+        <div class="price displayFlex">
+          <img src="assets/images/icon-ethereum.svg" alt="a svg of a worthless diamond">
+          <p>0.041 ETH</p>
+        </div>
+        <div class="timeLimit displayFlex">
+          <img src="assets/images/icon-clock.svg" alt="a collection of pixels">
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="creator displayFlex">
+        <img src="assets/images/image-avatar.png" alt="creator image" width="30px">
+        <p>Creation of <span>Jules Wyvern</span></p>
+      </div>
+    </div><!-- End of Card Wrapper -->
+  </main><!-- End of Main -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/SteveNoyes">Steven Noyes</a>.
